@@ -8,7 +8,7 @@ An esbuild plugin to compress output using gzip, brotli, and deflate. Based on [
 ## Install
 
 ```shell
-npm install esbuild-plugin-compress --save-dev
+npm install @liber-ufpe/esbuild-plugin-compress --save-dev
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm install esbuild-plugin-compress --save-dev
 
 ```javascript
 import esbuild from "esbuild";
-import compressPlugin from "esbuild-plugin-compress";
+import compressPlugin from "@liber-ufpe/esbuild-plugin-compress";
 
 const compress = compressPlugin();
 
@@ -35,7 +35,7 @@ Or when customizing the compression options:
 
 ```javascript
 import esbuild from "esbuild";
-import compressPlugin from "esbuild-plugin-compress";
+import compressPlugin from "@liber-ufpe/esbuild-plugin-compress";
 
 const compress = compressPlugin({
   gzip: true,

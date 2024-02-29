@@ -5,7 +5,7 @@ import {constants, createBrotliCompress, createDeflate, createGzip} from "node:z
 import fs from "node:fs";
 import pipe from "node:stream/promises";
 
-interface CompressOptions {
+export interface CompressOptions {
     gzip: boolean;
     brotli: boolean;
     deflate: boolean;
@@ -53,7 +53,7 @@ const compressBrotli = async (file: string, options: BrotliOptions) => {
     );
 }
 
-function compressPlugin(options: CompressOptions = defaultOptions): Plugin {
+export function compressPlugin(options: CompressOptions = defaultOptions): Plugin {
     return {
         name: "esbuild-plugin-compress",
         setup(build) {
@@ -89,4 +89,4 @@ function compressPlugin(options: CompressOptions = defaultOptions): Plugin {
     };
 }
 
-module.exports = compressPlugin;
+module.exports = {compressPlugin};
