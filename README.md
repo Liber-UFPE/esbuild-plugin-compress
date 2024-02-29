@@ -1,5 +1,8 @@
 # esbuild-plugin-compress
 
+[![Build](https://github.com/Liber-UFPE/esbuild-plugin-compress/actions/workflows/build.yml/badge.svg)](https://github.com/Liber-UFPE/esbuild-plugin-compress/actions/workflows/build.yml)
+[![CodeQL](https://github.com/Liber-UFPE/esbuild-plugin-compress/actions/workflows/codeql.yml/badge.svg)](https://github.com/Liber-UFPE/esbuild-plugin-compress/actions/workflows/codeql.yml)
+
 An esbuild plugin to compress output using gzip, brotli, and deflate. Based on [Node's zlib API](https://nodejs.org/api/zlib.html).
 
 ## Install
