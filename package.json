@@ -1,0 +1,44 @@
+{
+  "name": "@liber-ufpe/esbuild-plugin-compress",
+  "engines": {
+    "node": ">=18"
+  },
+  "version": "0.0.1",
+  "description": "esbuild plugin to compress output using gzip, brotli, and deflate.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marcospereira/esbuild-plugin-compress.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepack": "npm run build"
+  },
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/*.*"
+  ],
+  "keywords": [
+    "esbuild",
+    "compress",
+    "brotli",
+    "gzip",
+    "deflate",
+    "plugin"
+  ],
+  "author": "marcospereira",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/marcospereira/esbuild-plugin-compress/issues"
+  },
+  "homepage": "https://github.com/marcospereira/esbuild-plugin-compress#readme",
+  "dependencies": {
+    "esbuild": "^0.20.1",
+    "picomatch": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.22",
+    "@types/picomatch": "^2.3.3",
+    "typescript": "^5.3.3"
+  }
+}
