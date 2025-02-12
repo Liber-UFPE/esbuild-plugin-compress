@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/Liber-UFPE/esbuild-plugin-compress#readme",
   "dependencies": {
-    "esbuild": "^0.23.0",
+    "esbuild": "^0.25.0",
     "picomatch": "^4.0.1"
   },
   "devDependencies": {
