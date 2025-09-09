@@ -19,7 +19,7 @@ npm install @liber-ufpe/esbuild-plugin-compress --save-dev
 
 ```javascript
 import esbuild from "esbuild";
-import compressPlugin from "@liber-ufpe/esbuild-plugin-compress";
+import {compressPlugin} from "@liber-ufpe/esbuild-plugin-compress";
 
 const compress = compressPlugin();
 
@@ -36,7 +36,7 @@ Or when customizing the compression options:
 
 ```javascript
 import esbuild from "esbuild";
-import compressPlugin from "@liber-ufpe/esbuild-plugin-compress";
+import {compressPlugin} from "@liber-ufpe/esbuild-plugin-compress";
 
 const compress = compressPlugin({
   gzip: true,
